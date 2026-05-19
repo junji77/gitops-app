@@ -1,4 +1,4 @@
-# gitops-app/.github/workflows/ci-ops-app2.yml.
+# gitops-app/.github/workflows/ci-ops-app2.yml
 name: CI ops-app2 (ECR)
 
 on:
