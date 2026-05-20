@@ -13,6 +13,8 @@ management:
     web:
       exposure:
         include: health, info, metrics, prometheus
+        
+        
   endpoint:
     health:
       probes:
@@ -27,3 +29,10 @@ management:
     tags:
       application: ${spring.application.name}
       profile: ${app.profile:default}
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+
+      # 필요한 SLA 버킷 명시
+      slo:
+        http.server.requests: 50ms, 100ms, 200ms, 500ms, 1s, 2s, 5s
