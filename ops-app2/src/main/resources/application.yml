@@ -20,7 +20,7 @@ management:
         enabled: true
       # livenessState:
       #   enabled: true
-      # readinessState:
+      # readinessState:#
       #   enabled: true#
     prometheus:
       access: read_only
